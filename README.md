@@ -28,3 +28,7 @@ mkdir elastic
 ```
 docker-compose up 
 ```
+If there is a error about max_map_count, before docker-compose up, you must do
+```
+sysctl -w vm.max_map_count=262144
+```
